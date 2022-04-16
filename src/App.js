@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
     <BrowserRouter>
+    <div className="wrapper">
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/cardDetail" element={<CardDetail/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </div>
 <Footer/>
     </BrowserRouter>
     </div>

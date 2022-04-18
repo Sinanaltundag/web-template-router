@@ -25,13 +25,13 @@ const [subscribed, setSubscribed] = useState([])
 }
 
   return (
-    <section className="section-subscribe dark"  >
+    <section className="section-subscribe dark" >
     <span>Subscribe To Our Newsletter</span>
     <form onSubmit={handleSubmit} >
       <input type="email" name="email" id="" placeholder="Enter Email..." />
       <button type="submit" >Subscribe</button>
-    </form>
     <ToastContainer />
+    </form>
   </section>
   )
 }

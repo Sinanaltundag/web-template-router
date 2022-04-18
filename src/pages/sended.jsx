@@ -7,11 +7,11 @@ const Sended = () => {
     let navigate = useNavigate();
   return (
     <div>
-<h3>Dear {sendedMsg.name} We will call back to your mail {sendedMsg.email} asap</h3>
+<h3>Dear <span style={{color: 'red'}}>{sendedMsg.name}</span>, We will call back to your mail {sendedMsg.email} asap</h3>
 <p></p>
 
 <p>{sendedMsg.message} </p>
-<button onClick={navigate(-1)} >Turn Back</button>
+<button onClick={()=>navigate(-1)} >Turn Back</button>
  </div>
   )
 }

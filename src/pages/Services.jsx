@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Subscribe from "../components/Subscribe";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -12,20 +13,16 @@ const Services = () => {
     }
       // form veri alma yöntem 2
     const { name, email, message } = e.target.elements;
-    console.log({ username: name.value, password: email.value, message: message.value });
+    console.log({ username: name.value, email: email.value, message: message.value });
+
+
     const sendedMsg={ name: name.value, email: email.value, message: message.value };
     navigate("/sended", {state:{sendedMsg}})
   };
 
   return (
     <main>
-      <section className="section-subscribe dark">
-        <span>Subscribe To Our Newsletter</span>
-        <form action="">
-          <input type="email" name="email" id="" placeholder="Enter Email..." />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
+      <Subscribe/>
       <section className="section-middle light">
         <div className="left">
           <h3>Services</h3>
@@ -60,11 +57,11 @@ const Services = () => {
               <h3>Get A Quote</h3>
               <label htmlFor="name">Name</label>
               <br />
-              <input type="text" id="name" name="name" placeholder="Name" />
+              <input type="text" id="name" name="name" placeholder="Name" required/>
               <br />
               <label htmlFor="email">Email</label>
               <br />
-              <input type="text" id="email" name="email" placeholder="Email" />
+              <input type="text" id="email" name="email" placeholder="Email" required/>
               <br />
               <label htmlFor="message">Message</label>
               <br />

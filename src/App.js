@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import About from './pages/About';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Sended from './pages/sended';
 import Services from './pages/Services';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/cardDetail" element={<CardDetail/>}/>
+        <Route path="/sended" element={<Sended />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       </div>

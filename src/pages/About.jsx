@@ -1,15 +1,10 @@
 import React from 'react'
+import Subscribe from '../components/Subscribe'
 
 const About = () => {
   return (
     <main>
-      <section className="section-subscribe dark">
-        <span>Subscribe To Our Newsletter</span>
-        <form action="">
-          <input type="email" name="" id="" placeholder="Enter Email..." />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
+     <Subscribe/>
       <section className="section-middle light">
         <div className="left">
           <h3>About Us</h3>

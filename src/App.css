@@ -158,7 +158,7 @@ footer a:hover {
   color: rgb(250, 154, 154);
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   body {
     grid-template-rows: 15% 75% 10%;
   }
@@ -168,6 +168,11 @@ footer a:hover {
   }
   .section-middle {
     flex-direction: column;
+  }
+  .section-bottom {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
   }
 }
 
